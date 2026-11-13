@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "B1nLoader",
+  "version": "2.4.1",
+  "identifier": "app.b1nloader",
+  "build": {
+    "frontendDist": "dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "B1nLoader",
+        "width": 800,
+        "height": 600,
+        "minHeight": 300,
+        "minWidth": 400
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "",
+      "endpoints": []
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "createUpdaterArtifacts": false,
+    "category": "Utility",
+    "shortDescription": "User-friendly iOS sideloader (iloader fork)",
+    "longDescription": "B1nLoader is a fork of iloader, a user-friendly sideloader for iOS devices on Windows. It installs SideStore, LiveContainer and IPAs over USB using a free Apple ID.",
+    "windows": {
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper",
+        "silent": false
+      },
+      "nsis": {
+        "installerHooks": "./windows/installer-hooks.nsi"
+      }
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ]
+  }
+}
