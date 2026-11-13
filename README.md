@@ -10,6 +10,14 @@ Công cụ sideload IPA cho iOS trên Windows (fork của iloader).
 - WebView2 (tự tải khi cài)
 - iTunes / Apple Mobile Device Support (driver USB của Apple)
 
+## Tải sẵn (không cần build)
+
+Trong thư mục `release/`:
+
+- `B1nLoader_2.4.1_x64-setup.exe` — bộ cài (chạy file này)
+- `b1nloader.exe` — bản portable, chạy trực tiếp
+- `pairfix.exe` — tool sửa pairing thủ công (console)
+
 ## Build
 
 ```powershell
